@@ -1,0 +1,107 @@
+@import "../base/variables";
+
+body {
+    main {
+        div {
+            div {
+                .carr1 {
+                    height: 60vh;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .productosHero {
+            height: 100px;
+            width: 1200px;
+            padding: 100px;
+            h2 {
+                font-size: 30px;
+                font-weight: 400;
+            }
+            p {
+                font-size: 15px;
+                font-weight: 300;
+            }
+        }
+        .galeriaProductos1 {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            div{
+                img {
+                    height: 470px;
+                    width: 320px;
+                    object-fit: cover;
+                    transition: 0.3s ease-in-out;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+                .footerProductos {
+                    display: grid;
+                    grid-template-columns: 160px 160px;
+                    grid-template-rows: 30px;
+                    width: 320px;
+                    padding-top: 5px;
+                    h1 {
+                        font-size: 15px;
+                        font-weight: 200;
+                        justify-self: start;
+                        .precio {
+                            font-size: 15px;
+                            font-weight: 200;
+                            justify-self: end;
+                        }
+                    }
+                }
+            }
+        }
+        .galeriaProductos2 {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            div{
+                img {
+                    height: 470px;
+                    width: 320px;
+                    object-fit: cover;
+                    transition: 0.3s ease-in-out;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+                .footerProductos {
+                    display: grid;
+                    grid-template-columns: 160px 160px;
+                    grid-template-rows: 30px;
+                    width: 320px;
+                    padding-top: 5px;
+                    h1 {
+                        font-size: 15px;
+                        font-weight: 200;
+                        justify-self: start;
+                        .precio {
+                            font-size: 15px;
+                            font-weight: 200;
+                            justify-self: end;
+                        }
+                    }
+                }
+            }
+        }
+        .galeriaProductos3 {
+            background-color: rgba(250, 235, 215, 0.356);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            div{
+                img {
+                    height: 400px;
+                    width: 900px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

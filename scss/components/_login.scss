@@ -1,0 +1,47 @@
+@import "../base/variables";
+
+body {
+    main {
+        .login {
+            display: grid;
+            grid-template-columns: 300px;
+            grid-template-rows: 90px 50px 50px 20px 50px 20px;
+            row-gap: 10px;
+            justify-content: center;
+            padding-top: 100px;
+            div {
+                .headerLogin {
+                    font-weight: 300;
+                    font-size: 50px;
+                    text-align: center;
+                    align-self: center;
+                    justify-self: center;
+                }
+            }
+            .input {
+                align-self: center;
+                justify-self: center;
+                .inputLogin1 {
+                    height: 35px;
+                    width: 300px;
+                }
+                .inputLogin2 {
+                    height: 35px;
+                    width: 300px;
+                }
+            }
+            .botonLogin {
+                align-self: center;
+                justify-self: center;
+            }
+        .signinB {
+            background-color: beige;
+            font-weight: 500;
+            &:hover {
+                background-color: rgb(105, 105, 101);
+                color: white;
+            }
+        }
+        }
+    }
+}

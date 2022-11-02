@@ -1,0 +1,159 @@
+@import "../base/variables";
+
+/* MAIN */
+
+main {
+    .hero {
+        display: grid;
+        grid-template-columns: 500px 550px 500px;
+        grid-template-rows: 700px;
+        grid-column-gap: 20px;
+        justify-content: center;
+        align-content: center;
+        height: 800px;
+        padding-bottom: 400px;
+        padding-top: 600px;
+        background-color: $color-gray;
+        .textoHero1 {
+            justify-self: end;
+            h2 {
+                width: 500px;
+                height: 500px;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 100px;
+                text-align: end;
+            }
+        }
+        .imagenCentral {
+            position: relative;
+            object-fit: cover;
+            .heroImagen {
+                width: 550px;
+                height: 700px;
+            }
+            .imagenCircular {
+                position: absolute;
+                top: 250px;
+                left: 500px;
+                width: 320px;
+                height: 320px;
+                border-radius: 100%;
+                object-fit: cover;
+            }
+        }
+        .textoHero2 {
+            justify-self: start;
+        }
+        div {
+            p {
+                width: 400px;
+                font-size: 30px;
+                font-weight: 300;
+                font-style: normal;
+            }
+        }
+    }
+    .heroExtra {
+        position: relative;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 150px;
+        align-content: end;
+        height: 300px;
+        background-color: $color-gray;
+        border-bottom: 5px solid rgb(168, 167, 167);
+        .heroIzquierda {
+            justify-self: center;
+            h2 {
+                font-size: 60px;
+            }
+            h3 {
+                font-size: 30px;
+            }
+        }
+        .heroDerecha {
+            justify-self: center;
+            h2 {
+                font-size: 60px;
+            }
+            h3 {
+                font-size: 30px;
+            }
+        }
+        .botonHE {
+            position: absolute;
+            justify-self: center;
+            top: 278px;
+        
+            height: 40px;
+            width: 350px;
+            background-color: rgb(137, 158, 158);
+            color: black;
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            padding-top: 2px;
+            font-size: 23px;
+            border-radius: 50px;
+        
+        }
+    }
+    .productosDestacados {
+        display: grid;
+        grid:
+            'PDtittle PDtittle PDtittle'
+            'product1 product2 product3'
+        ;
+        grid-template-columns: 320px 320px 320px;
+        grid-template-rows: 150px 420px;
+        grid-column-gap: 150px;
+        grid-row-gap: 20px;
+        justify-content: center;
+        padding: 150px;
+        .PDtittle {
+            grid-area: PDtittle;
+            justify-self: center;
+            align-self: baseline;
+        
+            font-size: 45px;
+        }
+        .productDesc1 {
+            grid-area: product1;
+            img {
+                position: absolute;
+                width: 320px;
+                height: 420px;
+                object-fit: cover;
+                transition: 0.5s ease-in-out;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .productDesc2 {
+            grid-area: product2;
+            img {
+                width: 320px;
+                height: 420px;
+                object-fit: cover;
+                transition: 0.5s ease-in-out;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .productDesc3 {
+            grid-area: product3;
+            img {
+                width: 320px;
+                height: 420px;
+                object-fit: cover;
+                transition: 0.5s ease-in-out;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
